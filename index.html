@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картинная галерея "Приморская государственная картинная галерея" | Выставки и билеты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <i class="fas fa-palette"></i>
+                <span>Приморская государственная картинная галерея</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#exhibitions">Выставки</a></li>
+                    <li><a href="#events">Мероприятия</a></li>
+                    <li><a href="#tickets">Билеты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Приморская государственная картинная галерея</h1>
+            <p>Откройте для себя мир искусства через призму современности и классики. Уникальные выставки, авторские экскурсии и культурные мероприятия ждут вас.</p>
+            <a href="#tickets" class="cta-button">Купить билеты</a>
+        </div>
+    </section>
+
+    <!-- Current Exhibitions -->
+    <section class="exhibitions" id="exhibitions">
+        <div class="container">
+            <h2 class="section-title">Мероприятия ПГКГ с 2 по 31 января 2026</h2>
+            <div class="exhibitions-grid" id="exhibitionsGrid">
+                <!-- Exhibitions will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section class="events" id="events">
+        <div class="container">
+            <h2 class="section-title">Прошедшие мероприятия</h2>
+            <div class="events-grid" id="eventsGrid">
+                <!-- Events will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticket Purchase Form -->
+    <section class="ticket-form" id="tickets">
+        <div class="container">
+            <h2 class="section-title">Покупка билетов</h2>
+            <div class="ticket-form-container">
+                <form id="ticketForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="exhibition">Выберите выставку:</label>
+                            <select id="exhibition" required>
+                                <option value="" disabled selected>Выберите выставку</option>
+                                <!-- Options will be populated dynamically -->
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Дата посещения:</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ticketCount">Количество билетов:</label>
+                            <input type="number" id="ticketCount" min="1" max="10" value="1" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">ФИО:</label>
+                            <input type="text" id="name" placeholder="Иванов Иван Иванович" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Электронная почта:</label>
+                            <input type="email" id="email" placeholder="example@mail.ru" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Номер телефона:</label>
+                            <input type="tel" id="phone" placeholder="+7 (999) 123-45-67" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="discount">Тип билета:</label>
+                            <select id="discount">
+                                <option value="full" selected>Полный билет (500 руб.)</option>
+                                <option value="student">Студенческий (300 руб.)</option>
+                                <option value="pensioner">Пенсионный (250 руб.)</option>
+                                <option value="child">Детский (до 14 лет, 200 руб.)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="pushkin-card-info">
+                        <h3><i class="fas fa-credit-card"></i> Оплата Пушкинской картой</h3>
+                        <p>Вы можете оплатить билеты с помощью Пушкинской карты. После заполнения формы вы будете перенаправлены на страницу оплаты, где сможете выбрать способ оплаты "Пушкинская карта".</p>
+                        <p>Для оплаты необходимо иметь активированную Пушкинскую карту и достаточный баланс на счете.</p>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <div class="total-price" id="totalPrice">Итого: 500 руб.</div>
+                        <button type="submit" class="cta-button">Перейти к оплате</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Приморская государственная картинная галерея</h3>
+                    <p>Мы открываем новые имена в искусстве и представляем классиков в современном свете. Присоединяйтесь к миру искусства!</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Владивосток, ул. Алеутская, 12</p>
+                    <p><i class="fas fa-phone"></i> (423) 241-11-44</p>
+                    <p><i class="fas fa-envelope"></i> primgallery@mail.ru</p>
+                    <p><i class="fas fa-clock"></i> Вторник - воскресенье с 11:00 до 19:00.
+Выходной - понедельник.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#exhibitions">Текущие выставки</a></li>
+                        <li><a href="#events">Мероприятия</a></li>
+                        <li><a href="#tickets">Купить билеты</a></li>
+                        <li><a href="#">О галерее</a></li>
+                        <li><a href="#">Правила посещения</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Приморская государственная картинная галерея. Все права защищены.</p>
+                <p>Официальный партнер программы "Пушкинская карта".</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
