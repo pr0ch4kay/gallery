@@ -40,7 +40,7 @@
             {
                 id: 3,
                 title: "Выставка «Сокровища огненной живописи. 700 лет искусства лиможских эмалей» из цикла «Частные коллекции»",
-                image: "http://primgallery.com/app/uploads/2025/12/h3ewg-ohvfj-1080x1080.jpeg",
+                image: "https://primpress.ru/img/media/pic/1110251758309sm.jpg",
                 dates: " 07.11.2025 – 15.02.2026 Кураторские экскурсии: ср., пт. – 18:00",
                 author: "Куратор: ...",
                 status: "soon",
