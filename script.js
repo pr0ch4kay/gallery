@@ -70,23 +70,31 @@
         const events = [
             {
                 id: 1,
-                title: "На выставке «Николай Рерих» побывали гости из Приморской краевой библиотеки для слепых",
-                image: "http://primgallery.com/app/uploads/2025/12/5e812882-588a-42c0-87e2-f98073904d3f.jpg",
+                title: "Лекции",
+                image: "/images/lec.jpg",
                 date: "25.10.2023, 18:00",
-                type: "Экскурсия",
-                description: "Искусство должно быть доступно каждому. Без исключений."
+                type: "Лекции",
+                description: "..."
             },
             {
                 id: 2,
-                title: "Сотрудники Приморской государственной картинной галереи провели инклюзивный мастер-класс «Рукавичка»",
-                image: "http://primgallery.com/app/uploads/2025/12/5314538098114892181.jpg",
+                title: "Семейные выходные",
+                image: "/images/семейные выходные.jpg",
                 date: "02.11.2023, 16:00",
-                type: "Мастер-класс",
-                description: "Под руководством заведующей Детским музейным центром, художник Ольга Асаевич и специалист по инклюзии Алёна Серебрякова побывали в гостях у воспитанников Владивостокской специализированной школы – детского сада IV вида."
+                type: "Семейные выходные",
+                description: "."
+            },
+            {
+                id: 3,
+                title: "Детские программы",
+                image: "/images/детпрог.jpg",
+                date: "02.11.2023, 16:00",
+                type: "Семейные выходные",
+                description: "."
             },
         ];
         
-        // Ticket prices
+         // Ticket prices
         const ticketPrices = {
             full: 500,
             student: 300,
@@ -151,16 +159,16 @@
         // Populate exhibition and event dropdowns
         function populateDropdowns() {
             const exhibitionSelect = document.getElementById('exhibition');
-            // const eventSelect = document.getElementById('event');
+            const eventSelect = document.getElementById('event');
             
             // Clear existing options except first
             while (exhibitionSelect.options.length > 1) {
                 exhibitionSelect.remove(1);
             }
             
-            // while (eventSelect.options.length > 1) {
-            //     eventSelect.remove(1);
-            // }
+            while (eventSelect.options.length > 1) {
+                eventSelect.remove(1);
+            }
             
             // Add exhibitions to dropdown
             exhibitions.forEach(exhibition => {

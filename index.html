@@ -43,7 +43,7 @@
     <!-- Current Exhibitions -->
     <section class="exhibitions" id="exhibitions">
         <div class="container">
-            <h2 class="section-title">Мероприятия ПГКГ с 2 по 31 января 2026</h2>
+            <h2 class="section-title">Выставки ПГКГ с 2 по 31 января 2026</h2>
             <div class="exhibitions-grid" id="exhibitionsGrid">
                 <!-- Exhibitions will be loaded dynamically -->
             </div>
@@ -53,7 +53,7 @@
     <!-- Events -->
     <section class="events" id="events">
         <div class="container">
-            <h2 class="section-title">Прошедшие мероприятия</h2>
+            <h2 class="section-title">мероприятия с 2 по 31 января 2026</h2>
             <div class="events-grid" id="eventsGrid">
                 <!-- Events will be loaded dynamically -->
             </div>
@@ -61,7 +61,7 @@
     </section>
 
     <!-- Ticket Purchase Form -->
-    <section class="ticket-form" id="tickets">
+     <section class="ticket-form" id="tickets">
         <div class="container">
             <h2 class="section-title">Покупка билетов</h2>
             <div class="ticket-form-container">
@@ -71,6 +71,13 @@
                             <label for="exhibition">Выберите выставку:</label>
                             <select id="exhibition" required>
                                 <option value="" disabled selected>Выберите выставку</option>
+                                <!-- Options will be populated dynamically -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="event">Выберите мероприятие (необязательно):</label>
+                            <select id="event">
+                                <option value="" selected>Не выбрано</option>
                                 <!-- Options will be populated dynamically -->
                             </select>
                         </div>
@@ -129,6 +136,7 @@
         </div>
     </section>
 
+
     <!-- Footer -->
     <footer id="contacts">
         <div class="container">
@@ -153,7 +161,7 @@
 Выходной - понедельник.</p>
                 </div>
                 
-                <div class="footer-section">
+                <!-- <div class="footer-section">
                     <h3>Быстрые ссылки</h3>
                     <ul>
                         <li><a href="#exhibitions">Текущие выставки</a></li>
@@ -162,7 +170,7 @@
                         <li><a href="#">О галерее</a></li>
                         <li><a href="#">Правила посещения</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             
             <div class="copyright">
